@@ -234,10 +234,10 @@ install(TARGETS ${APP_TARGET} DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 # Install font files and license text to the appropriate directories
 install(FILES
-    ../firebolt-test-app/native/assets/LiberationSans-Bold.ttf
+    ./assets/LiberationSans-Bold.ttf
     DESTINATION "${APP_FONT_DIR}"
 )
 install(FILES
-    ../firebolt-test-app/native/assets/LICENSE
+    ./assets/LICENSE
     DESTINATION "${APP_FONT_LIC_DIR}"
 )

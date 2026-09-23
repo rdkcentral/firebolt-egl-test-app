@@ -35,7 +35,7 @@ cmake --build build --parallel
 SUMMARY = "Firebolt C++ EGL Test Application"
 DESCRIPTION = "Native C++ EGL test application conforming to Firebolt Lifecycle"
 LICENSE = "Apache-2.0"
-LIC_FILES_CHKSUM = "file://../../LICENSE;md5=3b83ef96387f14655fc854ddc3c6bd57"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=175792518e4ac015ab6696d16c4f607e"
 
 inherit cmake pkgconfig
 
@@ -44,7 +44,7 @@ SRCREV = "${AUTOREV}"  <=== Replace with SHA
 PV = "1.0.0"
 PR = "r0"
 
-S = "${WORKDIR}/git/firebolt-egl-test-app"
+S = "${WORKDIR}/git"
 
 DEPENDS = "firebolt-cpp-client nlohmann-json cairo virtual/egl virtual/libgles2 freetype westeros-simpleshell libxkbcommon"
 RDEPENDS:${PN} += "firebolt-cpp-client firebolt-cpp-transport cairo westeros-simpleshell libxkbcommon xkeyboard-config"
@@ -83,7 +83,7 @@ FILES:${PN} += " /usr/share/*"
 
 ### Font License Note
 
-[`LICENSE`](../firebolt-test-app/native/assets/LICENSE) is the license text installed from the Liberation font package for
+[`LICENSE`](./assets/LICENSE) is the license text installed from the Liberation font package for
 `LiberationSans-Bold.ttf`.
 
 ---
@@ -111,7 +111,7 @@ Runtime env vars:
 
 ## License
 
-Apache-2.0 – see [LICENSE](./../../LICENSE)
+Apache-2.0 – see [LICENSE](./LICENSE)
 
 ---
 
@@ -124,6 +124,6 @@ Apache-2.0 – see [LICENSE](./../../LICENSE)
 | **Font** | Liberation Sans Bold |
 | **Copyright holders** | Google Corporation (digitized data); Red Hat, Inc. |
 | **Reserved Font Names** | Arimo, Tinos, Cousine, Liberation |
-| **License** | [SIL Open Font License, Version 1.1](../firebolt-test-app/native/assets/LICENSE) |
+| **License** | [SIL Open Font License, Version 1.1](./assets/LICENSE) |
 | **Source** | https://github.com/liberationfonts/liberation-fonts |
 | **Bundled at** | `../firebolt-test-app/native/assets/LiberationSans-Bold.ttf` |
