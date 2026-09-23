@@ -126,4 +126,4 @@ Apache-2.0 – see [LICENSE](./LICENSE)
 | **Reserved Font Names** | Arimo, Tinos, Cousine, Liberation |
 | **License** | [SIL Open Font License, Version 1.1](./assets/LICENSE) |
 | **Source** | https://github.com/liberationfonts/liberation-fonts |
-| **Bundled at** | `../firebolt-test-app/native/assets/LiberationSans-Bold.ttf` |
+| **Bundled at** | `./assets/LiberationSans-Bold.ttf` |
